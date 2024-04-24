@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+</head>
+<body>
+
+{% for attribute in attributes %}
+<h1>{{ attribute.attribute_1 }}</h1>
+<h1>{{ attribute.attribute_2 }}</h1>
+<h1>{{ attribute.attribute_3 }}</h1>
+<h1>{{ attribute.attribute_4 }}</h1>
+<h1>{{ attribute.attribute_5 }}</h1>
+<h1>{{ attribute.attribute_6 }}</h1>
+{% endfor %}
+
+<a href="{% url 'main_lobby' %}">на главную</a>
+
+</body>
+</html>

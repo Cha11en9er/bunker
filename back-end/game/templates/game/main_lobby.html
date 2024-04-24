@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lobby</title>
+</head>
+<body>
+
+<form method="POST" action="/main_lobby/{{ exist_user.id }}">
+    {% csrf_token %}
+    <h1>это главное лобби пользователя {{ exist_user.login }}</h1>
+    <a class="nav-item nav-link" href="{% url 'startpage' %}">выйти из аккаунта</a>
+    <a class="nav-item nav-link" href="{% url 'game_lobby' %}">игровое лобби</a>
+</form>
+
+</body>
+</html>

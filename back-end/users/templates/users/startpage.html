@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'users/startpage.css' %}">
+
+    <title>{% block title %} Добро подаловать на сайт {% endblock %}</title>
+</head>
+<body>
+{% block content %}
+    <div class = "startpage_content">
+        <a class = "startpage_element" href = "/login">Вход</a>
+        <a class = "startpage_element" href = "/register">Регистрация</a>
+    </div>
+{% endblock %}
+</body>
+</html>

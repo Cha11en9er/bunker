@@ -1,0 +1,44 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0;
+}  
+
+body {
+    background-image: url('../users/images/start_page.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+}
+
+.startpage_content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    backdrop-filter: blur(5px);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.startpage_element {
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.startpage_element:first-child {
+    margin-bottom: 20px;
+}
+
+.startpage_element:hover {
+    color: gray;
+}
+
+/* register */
+
+.enter_data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
